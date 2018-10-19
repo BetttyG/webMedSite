@@ -1,0 +1,70 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4C96D7;
+}
+
+.navBigScreen li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8BC8FE;
+}
+.active {
+    background-color: #F29898;
+}
+
+.navBigScreen li {
+    border-right: 1px solid #ffffff;
+}
+/* 
+li:last-child {
+    border-right: none;
+} */
+.navBigScreen {
+    display: none;
+}
+
+@media (min-width: 680px) {
+    .navBigScreen {
+        display: inline;
+    }
+}
+
+.navSmallScreen {
+    display: none;
+}
+
+.navSmallScreen li
+{
+    float: none;
+}
+
+.show{
+    display:block!important;
+}
+@media (min-width: 680px) 
+{
+    .hide 
+    {
+        display: none!important;
+    }
+}
+/* this is to hide small menu if menu is open by script but resolution is higher then on mobile devices */
+@media (max-width: 680px) 
+{
+    .hide 
+    {
+    }
+}

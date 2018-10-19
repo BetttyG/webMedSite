@@ -1,0 +1,79 @@
+<div class="contentHeader">
+    <h1>Book an Appointment</h1>
+</div>
+<div class="appointC1">
+    <form name="appointmentForm" action="#">
+        <div>
+            <label for="fname">First Name</label>
+            <div>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." autofocus required>
+            </div>
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <div>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+        </div>
+        <div>
+            <label for="patient_phone">Your phone number</label>
+            <div>
+                <input id="patient_phone" type="tel" value="" name="phone" placeholder="phone" required>
+            </div>
+        </div>
+        <div>
+            <label for="patient_email">Your email address</label>
+            <div>
+                <input id="patient_email" type="email" value="" name="email" placeholder="email" required>
+            </div>
+        </div>
+        <div>
+            <label for="patient_date">Preferred appointment date</label>
+            <div>
+                <!-- New input types: date and time, that are not supported by older web browsers, will behave as <input type="text">-->
+                <input id="patient_date" type="date" value="" name="date" required>
+            </div>
+        </div>
+        <div>
+            <label for="patient_time">Preferred appointment time</label>
+            <div>
+                <input id="patient_time" type="time" value="" name="time" required>
+            </div>
+        </div>
+        <div>
+            <label for="services">Required services</label>
+            <div>
+                <select id="services" name="selectService">
+                    <option value="services">Select services</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="vaccines">Vaccines</option>
+                    <option value="antenatal_care">Ante-natal Care</option>
+                    <option value="blood-tests">Blood Tests</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="preferred_method">Preferred method of contact</label>
+            <div>
+                <input type="radio" value="Phone" name="preferred_method"> Phone
+                <input type="radio" value="Email" name="preferred_method" checked="checked"> Email
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Make an Appointment" onclick="validateForm();">
+        </div>
+    </form>
+    <br>
+    <br>
+</div>
+<div class="appointC2">
+    <div>
+        <h3>Appointments</h3>
+        <p>We are open Monday to Saturday.</p>
+        <p>Our opening hours are Monday to Friday 08:00 to 17:00 and Saturday 9:00 to 14:00</p>
+        <h3>Cancellations</h3>
+        <p>If you are unable to attend an appointment please inform us as soon as possible so we can allocate your appointment
+            to another patient.</p>
+    </div>
+</div>
+<script src="scripts/formValidation.js"></script>

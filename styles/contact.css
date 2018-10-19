@@ -1,0 +1,39 @@
+.contactC1
+{
+    width: 100%;
+    text-align: center;
+}
+.contactC2
+{
+    width: 100%;
+    
+}
+a
+{
+  color: #4C96D7;
+  text-decoration: none;
+}
+.mapDiv
+{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+
+@media (min-width: 800px)
+{    
+    .contactC1
+    {
+        width: 50%;
+        display: block;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .contactC2
+    {
+        width: 50%;
+        display: block;
+        -webkit-order: 2;
+        order: 2;
+    }
+}

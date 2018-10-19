@@ -1,0 +1,22 @@
+table, td, th {    
+    border: 1px solid #4C96D7;
+}
+th, td {
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.firstCell
+{
+    width: 85%;
+}
+.secondCell
+{
+    width: 15%;
+}
+.textRight
+{
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+.responsiveImage
+{
+    width: 90%;
+    height: auto;
+}
+
+.contentHeader, .practiceStaffC1, .practiceStaffC2, .practiceStaffC3, .practiceStaffC4, .practiceStaffC5, .practiceStaffC6
+{
+    width: 100%;
+}
+
+@media (min-width: 800px) 
+{   
+    .practiceStaffC1, .practiceStaffC3, .practiceStaffC5
+    {
+        width: 35%;
+    }
+    .practiceStaffC2, .practiceStaffC4, .practiceStaffC6
+    {
+        width: 65%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Medical Clinic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/nav.css" />
+        <!-- content styles start -->
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/home.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/practice_staff.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/appointments.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/clinics_services.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/prices.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/contact.css" />
+        <!-- content styles end -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="outer-div">
+            <div class="inner-div">
+                <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+                <!-- Header -->
+                <header class="container">
+                    <!-- Logo -->
+                    <div class="headerC1"><img src="img/logo.png" alt="Medical Clinic" class="headerLogo"></div>
+
+                    <!-- Contact info -->
+                    <div class="headerC2">Call us on 0123343344<br /><a href="mailto:info@mymedicalclinic.ie">info@mymedicalclinic.ie</a></div>
+                    <div class="headerC3"><a href="javascript:void(0);" onclick="toggleNavigationMenu()" title="Toggle Navigation Menu"><img src="img/fa_bars.png" class="fa_bars" alt="Medical Clinic"></a></div>
+                </header>
+                <!-- Navbar  -->
+                <nav>
+                    <div class="navBigScreen">
+                        <ul>
+                            <li><a id="home_big" href="javascript:void(0);" onclick="loadContent('home')">Home</a></li>
+                            <li><a id="practice_staff_big" href="javascript:void(0);" onclick="loadContent('practice_staff')">Practice Staff</a></li>
+                            <li><a id="appointments_big" href="javascript:void(0);" onclick="loadContent('appointments')">Appointments</a></li>
+                            <li><a id="clinics_services_big" href="javascript:void(0);" onclick="loadContent('clinics_services')">Services</a></li>
+                            <li><a id="prices_big" href="javascript:void(0);" onclick="loadContent('prices')">Prices</a></li>                    
+                            <li><a id="contact_big" href="javascript:void(0);" onclick="loadContent('contact')">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div id="toggleNavigation" class="navSmallScreen hide">
+                        <ul>
+                            <li><a id="home_sm" href="javascript:void(0);" onclick="loadContent('home')">Home</a></li>
+                            <li><a id="practice_staff_sm" href="javascript:void(0);" onclick="loadContent('practice_staff')">Practice Staff</a></li>
+                            <li><a id="appointments_sm" href="javascript:void(0);" onclick="loadContent('appointments')">Appointments</a></li>
+                            <li><a id="clinics_services_sm" href="javascript:void(0);" onclick="loadContent('clinics_services')">Services</a></li>
+                            <li><a id="prices_sm" href="javascript:void(0);" onclick="loadContent('prices')">Prices</a></li>                    
+                            <li><a id="contact_sm" href="javascript:void(0);" onclick="loadContent('contact')">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Content -->
+                <main>
+                    <div id="content" class="container"></div>
+                </main>
+                <!-- Footer  -->
+                <footer>
+                    <!-- First Grid  -->
+                    <div class="container">
+                        <!-- Contact  -->
+                        <div class="footerC1">
+                            <h2>Contact</h2>
+                            <p>1 O'Connell Street Lower<br>North City<br>Dublin 1<br>D01 TX31</p>
+                        </div>
+                        <!-- Opening Hours  -->
+                        <div class="footerC2">
+                            <h2>Openig Hours</h2>
+                            <p>Monday – Wednesday 8am to 6pm<br>Tuesday – Thursday 9am to 7pm<br>Friday – Saturday  8am to 4pm</p>
+                        </div>
+                        <!-- Links  -->
+                        <div class="footerC3">
+                            <h2>Links</h2>
+                            <p><a href="https://www.hse.ie/" target="_blank">HSE - Ireland's Health Services</a><br><a href="http://www.citizensinformation.ie/en/" target="_blank">Citizens Information</a></p>
+                        </div>
+                        <!-- Social Media  -->
+                        <div class="footerC4">
+                            <h2>Social Media</h2>
+                            <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" class="socialMediaIcon" alt="Medical Clinic"></a>
+                            <a href="http://plus.google.com" target="_blank"><img src="img/googleplus.png" class="socialMediaIcon" alt="Medical Clinic"></a>
+                            <a href="http://www.linkedin.com/" target="_blank"><img src="img/linkedin.png" class="socialMediaIcon" alt="Medical Clinic"></a>
+                            <a href="mailto:info@mymedicalclinic.ie"><img src="img/mail.png" class="socialMediaIcon" alt="Medical Clinic"></a>
+                        </div>
+                    </div>
+                    <!-- Copyright  -->
+                    <div class="copyright">
+                        <hr />
+                            <p>Copyright 2018. Medical Clinic, Medical Center</p>
+                        <hr />
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script>
+            loadContent('home');
+        </script>
+    </body>
+</html>

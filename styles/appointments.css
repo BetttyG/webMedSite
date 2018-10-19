@@ -1,0 +1,67 @@
+.container div
+{
+  box-sizing: border-box;
+} 
+
+.appointC1, .appointC2
+{
+    /* height: 575px; */
+    border-width: 0px;
+    border-color: #000;
+    border-style: solid;
+}
+
+.picture {
+    max-width: 100%;
+    height: auto;    
+    border-width: 3px;
+    border-color: rgb(252, 22, 60);
+}
+
+.appointC1
+{
+    width: 100%;
+}
+.appointC2
+{
+    width: 100%;
+}
+
+input, submit, select 
+{
+    width: 70%;   
+    padding: 4px 2px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #23293357;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+input[type=radio]
+{
+    width: 20px;
+}
+input[type=submit]:hover 
+{
+    background-color: #F29898;
+}
+
+@media (min-width: 600px)
+{    
+    .appointC1
+    {
+        width: 35%;
+        display: block;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .appointC2
+    {
+        width: 65%;
+        display: block;
+        -webkit-order: 2;
+        order: 2;
+    }
+}
+
